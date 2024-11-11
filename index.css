@@ -1,71 +1,331 @@
-*{
-    margin:0;
-    padding:0;
-    box-sizing: border-box;
-}
-body{
-font-family: Arial, Helvetica, sans-serif;
-}
-header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-    background-color: #fff;
-}
-.logo {
-    font-size: 1.5rem;
-    color:#005fa3;
-    font-weight: bold;
+@import url('https://fonts.googleapis.com/css2?family=Host+Grotesk:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-}
-nav a{
-    margin-left: 15px;
-    text-decoration: none;
-    color: #333;
-    font-size: 1rem;
-}
-    .hero{
-        background-image: url('C:\TheGym\Fewo_Direct\young-asian-mother-reading-book-600nw-1702697266.webp');
+/* @media screen and (max-width: 1920px) { */
+    * {
+        margin: 0;
+        padding: 0;
+        font-family: "Roboto", sans-serif;
+        font-weight: 100;
+        font-style: normal;
+        text-decoration: none;
+    }
+    
+    html,body {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
+    
+    .container {
+        width: 100%;
+        margin: auto;
+        /* border: black 2px solid; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .header_container{
+        width: 100%;
+        max-width: 1100px;
+        min-width: fit-content;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        padding: 15px;
+        /* border: 2px solid red; */
+    }
+    
+    .header {
+        width: 100%;
+        height: 50px;
+        display: flex;
+        justify-content: space-between;
+        column-gap: 100px;
+    }
+    
+    .header .logo {
+        display: flex;
+        justify-content: center;
+        margin-left: 25px;
+    }
+
+    .header .logo img {
+        width: 170px;
+    }
+    
+    .header .menu {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        column-gap: 30px;
+    }
+    
+    .header .menu a {
+        font-weight: 450;
+        color: black;
+        font-size: 0.89rem;
+    }
+
+    .download_button_header{
+        display: flex;
+        align-items: end;
+        column-gap: 3px;
+        border: 1px black solid;
+        padding: 6px;
+        border-radius: 7px;
+    }
+
+    .download_button_header svg{
+        width: 15px;
+    }
+
+    /* ---LANDING AREA--- */
+
+    .landing_area_container {
+        position: relative;
+        background-image: url('./public/images/landing_bg.png');
         background-size: cover;
         background-position: center;
-        padding: 100 px 20px;
-        text-align: center;
-        color:#fff;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 100px;
+        padding-bottom: 120px;
+        z-index: 0;
+        overflow: hidden;
+    }
+
+    .landing_area_shadow {
+        position: absolute;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.2);
+    }
+
+    .landing_text {
         position: relative;
-        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+        display: block;
+        width: 100%;
+        max-width: 1100px;
+        min-width: fit-content;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* border: 2px red solid; */
+        flex-wrap: wrap;
+        margin: auto 0;
+        margin: 25px;
+        z-index: 2;
     }
-.hero h1{
-    font-size: 2.5 rem;
-    margin-bottom: 20px;
-}
-.search-bar{
-    display: flex;
-    justify-content: center;
-    gap:10px;
-    margin-top: 20px;
-}
-.search-bar input,.search-bar button{
-    padding: 10 px;
-    font-size: 1 rem;
-    border: none;
-    border-radius: 5px;
 
-} 
-.search-bar input{
-    width: 200px;
-}
-.search-bar button{
-    background-color: #001f54;
-    color :#fff;
-    cursor: pointer;
-}
-@media (max-width: 768px) {
-    .input-field {
+    .landing_text p {
+        width: 95%;
+        font-weight: 500;
+        color: rgb(255, 255, 255);
+        font-size: 3.5rem;
+    }
+
+    .landing_qs {
+        position: relative;
+        align-self: center;
+        width: fit-content;
+        max-width: 1100px;
+        min-width: fit-content;
+        display: flex;
+        column-gap: 20px;
+        justify-content: center;
+        align-items: center;
+        background-color: #f7f7f7;
+        border-radius: 10px;
+        margin-bottom: 100px;
+        padding: 10px;
+        z-index: 2;
+    }
+
+    .qn{
+        padding: 10px 30px 10px 0px;
+        border-radius: 7px;
+        background-color: #ffffff;
+        border: 1.5px solid black;
+        display: flex;
+        align-items: center;
+    }
+
+    .qn p{
+        font-weight: 400;
+        margin-right: 100px;
+    }
+
+    .qn svg{
+        width: 30px;
+        margin-right: 10px;
+    }
+
+    .landing_qs button {
+        background-color: #1a1e3b;
+        border-radius: 25px;
+        color: white;
+        font-weight: 500;
+        font-size: 1.1rem;
+        border: 0;
+        padding: 17px;
+        cursor: grab;
+    }
+
+    /* ---DESTINATION SECTION--- */
+
+    .destination_section{
+        width: 100%;
+        max-width: 1100px;
+        min-width: fit-content;
+        margin-bottom: 20px;
+        margin-top: 30px;
+    }
+
+    .destinationAd{
+        width: 95%;
+        background-color: #191e3b;
+        border-radius: 15px;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+        margin: 0 auto;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .destinationAd .text{
+        display: flex;
+        padding: 10px;
+        justify-content: center;
+        align-items: center;
+        column-gap: 10px;
+        margin: auto 0;
+    }
+
+    .destinationAd .text .lg_holder {
+        width: fit-content;
+        background-color: #add1f3;
+        border-radius: 100%;
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .destinationAd .text .lg_holder svg {
+        width: 20px;
+    }
+
+    .destinationAd .text .text {
+        font-weight: 400;
+        color: white;
+    }
+
+
+    .destinationAd .button {
+        margin: auto 40px;
+    }
+
+    .destinationAd .button button{
+        color: white;
+        font-weight: 500;
+        border: 0;
+        background-color: transparent;
+        margin-bottom: 10px;
+        margin: 0;
+        padding: 0;
+    }
+
+    /* ---POPULAR DESTINATIONS--- */
+    .pop_destination{
+        width: 100%;
+
+    }
+
+    /* ---FOOTER--- */
+    .footer {
+        width: 100%;
+        height: fit-content;
+        background-color: #f1f1f1;
+    }
+
+    .footer .logo {
+        width: 100%;
+        max-width: 1100px;
+        min-width: fit-content;
+        display: block;
+        margin: 0 auto;
+        margin-top: 30px;
+    }
+
+    .footer .logo img {
         width: 150px;
+        margin-bottom: 20px;
     }
 
-    .hero h1 {
-        font-size: 2rem;
+    .points {
+        margin: 0 auto;
+        width: 90%;
+        max-width: 1100px;
+        min-width: fit-content;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
     }
-}
+
+    .points .pointSection {
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+        margin-bottom: 30px;
+    }
+
+    .points .pointSection strong {
+        font-weight: 500;
+        
+    }
+
+    .points .pointSection a {
+        color: #0766d3;
+        font-size: 0.9rem;
+        font-weight: 500;
+    }
+
+    .points .pointSection a:hover {
+        text-decoration: underline;
+    }
+
+    .copyright {
+        margin: 0 auto;
+        border: 0;
+        border-top: 1px solid #bebebe;
+        width: 100%;
+        max-width: 1100px;
+        min-width: fit-content;
+        padding: 10px 35px;
+        margin-bottom: 60px;
+    }
+
+    .copyright p {
+        margin-top: 15px;
+        font-size: 0.8rem;
+        letter-spacing: 1.2px;
+        text-align: center;
+        font-weight: 400;
+    }
+/* } */
+
+/* @media screen and (max-width: 1280px)  and (min-width: 640px){}
+
+@media screen and (max-width: 640px) {} */

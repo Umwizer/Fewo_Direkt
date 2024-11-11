@@ -1,32 +1,154 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Booking page </title>
+    <title>FeWo-direkt | Book your holiday apartment: apartments, holiday homes</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="shortcut icon" href="./public/images/favicon.png" type="image/x-icon">
+    <link rel="icon" href="./public/images/favicon.png" type="image/x-icon">
 </head>
-<link rel="stylesheet" href="index.css">
-<body>
-    <header>
-        <div class="logo">FEWO-DIRECT</div> 
-            <nav>
-                 <a href="#">Download the app</a>
-                 <a href="#">Travel planner</a>
-                 <a href="#">Register Acccomodation</a>
-                 <a href="#">help</a>
-                <a href="#">My Travels</a>
 
-            </nav>
-         </header>
-         <main>
-            <section class="hero">
-             <h1> is fine ,you book with FEWO-DIRECT</h1>
-             <div  class="search-bar">
-               <input type="text" placeholder="Where should we go ?">
-               <input type="name" placeholder="Date" name="name" id="">
-               <input type="text" placeholder="Guests">
-             </div>
+<body>
+    <div class="container">
+        <div class="header_container">
+            <section class="header">
+                <div class="logo">
+                    <img src="./public/images/logo.svg" alt="logo">
+                </div>
+                <div class="menu">
+                    <div class="download_button_header">
+                        <svg class="svg-download uitk-icon uitk-icon-leading" aria-hidden="true" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <path
+                                d="M11.5 3a.5.5 0 0 0-.5.5v8.086l-3.5-3.5c-.178-.178-.5-.051-.5.207v1.914a.5.5 0 0 0 .146.354l4.147 4.146a1 1 0 0 0 1.414 0l4.147-4.146a.5.5 0 0 0 .146-.354V8.293c0-.258-.322-.385-.5-.207l-3.5 3.5V3.5a.5.5 0 0 0-.5-.5h-1z">
+                            </path>
+                            <path
+                                d="M3.5 14a.5.5 0 0 0-.5.5V17a3 3 0 0 0 3 3h12a3 3 0 0 0 3-3v-2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5V17a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1v-2.5a.5.5 0 0 0-.5-.5h-1z">
+                            </path>
+                        </svg>
+                        <a
+                            href=https://t.vrbo.io/3fsamZD0nsb/?~feature=Mobile%20Web&~channel=Referral&~customer_campaign=BRAND&~campaign=VRBO-NAVBAR-DESKTOP-CTA-V0DESKTOP&~customer_ad_name=BRAND.VRBO.OWNED.BRANCH.DEFAULT.MAD&~customer_placement=VRBO-NAVBAR-DESKTOP-CTA-V0DESKTOP&hav=ae261b3b-a11c-ed8a-9533-a8bb2d5cb96a&%24desktop_url=https%3A%2F%2Fwww.fewo-direkt.de%2Fapp&custom_web_attribute=ae261b3b-a11c-ed8a-9533-a8bb2d5cb96a&%24canonical_url=https%3A%2F%2Fwww.fewo-direkt.de%2F"">Download
+                            the app</a>
+                    </div>
+                    <a href="https://www.fewo-direkt.de/tripboard">Travel planner</a>
+                    <a href="https://www.fewo-direkt.de/list">Register Accomodation</a>
+                    <a href="https://www.fewo-direkt.de/helpcenter">Help</a>
+                    <a href="https://www.fewo-direkt.de/login?enable_login=true&redirectTo=/traveler/th/bookings">My
+                        Travels</a>
+                    <a href="">Register</a>
+                </div>
             </section>
-         </main>
+        </div>
+        <div class="landing_area_container">
+            <div class="landing_text">
+                <p>Everything is fine, you book with FeWo-direkt</p>
+            </div>
+            <div class="landing_qs">
+                <div class="qn q1">
+                    <svg class="uitk-icon uitk-field-icon" aria-hidden="true" viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <path
+                            d="M16.863 4.198A7.454 7.454 0 0 0 11.558 2c-2.004 0-3.888.781-5.354 2.248a7.48 7.48 0 0 0-.804 9.659l5.547 7.779a.752.752 0 0 0 1.222 0l5.546-7.779c2.137-2.997 1.798-7.059-.852-9.709Zm-.368 8.837-4.937 6.923-4.936-6.923c-1.708-2.396-1.438-5.646.69-7.777A5.967 5.967 0 0 1 11.559 3.5c1.604 0 3.11.625 4.293 1.808a5.984 5.984 0 0 1 .644 7.727Z">
+                        </path>
+                        <path
+                            d="M11.558 6.564A2.99 2.99 0 0 0 8.57 9.552a2.99 2.99 0 0 0 2.988 2.987 2.99 2.99 0 0 0 2.987-2.987 2.99 2.99 0 0 0-2.987-2.988Zm0 4.475a1.49 1.49 0 0 1-1.488-1.487c0-.82.668-1.488 1.488-1.488s1.487.667 1.487 1.488-.667 1.487-1.487 1.487Z">
+                        </path>
+                    </svg>
+                    <p class="text">Where should we go?</p>
+                </div>
+                <div class="qn q2">
+                    <svg class="uitk-icon uitk-field-icon" aria-hidden="true" viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <path d="M7 12a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1v-2a1 1 0 0 0-1-1H7z"></path>
+                        <path fill-rule="evenodd"
+                            d="M8 4h8V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5V4h1a3 3 0 0 1 3 3v12a3 3 0 0 1-3 3H5a3 3 0 0 1-3-3V7a3 3 0 0 1 3-3h1V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5V4zM4 7a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v1H4V7zm0 3h16v9a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-9z"
+                            clip-rule="evenodd"></path>
+                    </svg>
+                    <p class="text">Nov. 23 - Dec. 7</p>
+                </div>
+                <div class="qn q3">
+                    <svg class="uitk-icon uitk-field-icon" aria-hidden="true" viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <path fill-rule="evenodd"
+                            d="M12 3a4 4 0 1 0 0 8 4 4 0 0 0 0-8zm-2 4a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm2 5a8.002 8.002 0 0 0-7.92 6.862C3.903 20.107 4.94 21 6 21h12c1.06 0 2.097-.893 1.92-2.138A8.001 8.001 0 0 0 12 12zm0 2a6.002 6.002 0 0 1 5.917 5H6.083A6.002 6.002 0 0 1 12 14z"
+                            clip-rule="evenodd"></path>
+                    </svg>
+                    <p class="text">Guests 2 travelers</p>
+                </div>
+                <button class="landing_button">Seek</button>
+            </div>
+            <div class="landing_area_shadow"></div>
+        </div>
+        <div class="destination_section">
+            <div class="destinationAd">
+                <section class="text">
+                    <div class="lg_holder">
+                        <svg class="uitk-icon uitk-icon-spotlight-icon" aria-hidden="true" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <path
+                                d="M22 8.688c-.043-4.41-4.738-7.196-8.644-4.817A6.39 6.39 0 0 0 12 5c-.365-.4-.82-.815-1.356-1.142C6.82 1.524 1.977 4.24 2 8.688c.015 2.873 1.4 5.457 3.365 7.498 1.797 1.865 4.056 3.397 6.117 4.668a1 1 0 0 0 1.052-.001c2.04-1.266 4.312-2.81 6.12-4.682 1.98-2.05 3.373-4.639 3.346-7.483z">
+                            </path>
+                        </svg>
+                    </div>
+                    <p class="text">Sign in to save your favorites and start planning your next trip.</p>
+                </section>
+                <section class="button">
+                    <button class="landing_button">Register</button>
+                </section>
+            </div>
+
+            <div class="pop_destination"></div>
+        </div>
+        <div class="footer">
+            <section class="logo">
+                <img src="./public/images/logo.svg" alt="logo">
+            </section>
+            <section class="points">
+                <div class=" pointSection pointOne">
+                    <strong>Explore FeWo-direkt</strong>
+                    <a href="">Advertise accommodation</a>
+                    <a href="">Book with confidence</a>
+                    <a href="">trust and security</a>
+                    <a href="">Resources for Partners</a>
+                    <a href="">holiday homes and holiday inspiration</a>
+                </div>
+                <div class=" pointSection pointTwo">
+                    <strong>Pursue</strong>
+                    <a href="">Advertise accommodation</a>
+                    <a href="">Book with confidence</a>
+                    <a href="">trust and security</a>
+                    <a href="">Resources for Partners</a>
+                    <a href="">holiday homes and holiday inspiration</a>
+                    <a href="">Advertise accommodation</a>
+                    <a href="">Book with confidence</a>
+                    <a href="">trust and security</a>
+                    <a href="">trust and security</a>
+                    <a href="">Resources for Partners</a>
+                    <a href="">Resources for Partners</a>
+                    <a href="">holiday homes and holiday inspiration</a>
+                    <a href="">Advertise accommodation</a>
+                    <a href="">Book with confidence</a>
+                </div>
+                <div class=" pointSection pointThree">
+                    <strong>The Vrbo family</strong>
+                    <a href="">Advertise accommodation</a>
+                    <a href="">Book with confidence</a>
+                    <a href="">trust and security</a>
+                    <a href="">Resources for Partners</a>
+                    <a href="">holiday homes and holiday inspiration</a>
+                    <a href="">Advertise accommodation</a>
+                    <a href="">Book with confidence</a>
+                </div>
+            </section>
+            <section class="copyright">
+                <p>© 2024 HomeAway, an Expedia Group company. All rights reserved. HomeAway and the HomeAway logo
+                    are
+                    trademarks or registered trademarks of HomeAway.com, Inc.</p>
+            </section>
+        </div>
+    </div>
 </body>
+
 </html>
